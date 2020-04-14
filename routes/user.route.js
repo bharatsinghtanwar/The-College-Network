@@ -14,12 +14,12 @@ router.post("/resetpassword", auth, user_controller.resetPass)
 
 router.get("/", auth, user_controller.dashboard)
 
-router.post("/update", auth, user_controller.update)
+router.put("/", auth, user_controller.update)
 
 router.get("/feed", auth, user_controller.feed)
 
-router.post("/createpost", auth, user_controller.createpost)
+router.post("/post", auth, user_controller.createpost)
 
-router.get("/myposts", auth, user_controller.myposts)
+router.get("/post", auth, user_controller.myposts)
 
 module.exports = router
